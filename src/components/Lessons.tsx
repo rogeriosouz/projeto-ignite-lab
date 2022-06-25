@@ -26,60 +26,120 @@ export function Lessons({ title, slug, availebleAt, type }: LessonsProps) {
   const isLLessonAvaliable = isPast(availebleAt);
 
   return (
-    <Link to={`/event/lesson/${slug}`} className="flex flex-col group">
-      <span className="text-gray-300">{availableDateFormated}</span>
+    <>
+      {isLLessonAvaliable ? (
+        <Link to={`/event/lesson/${slug}`} className="flex flex-col group">
+          <span className="text-gray-300">{availableDateFormated}</span>
 
-      <div
-        className={classNames(
-          'flex flex-col rounded border border-gray-500 p-4 mt-2 group-hover:border-green-500',
-          {
-            'bg-green-500': isActiveLesson,
-          }
-        )}
-      >
-        <header className="flex items-center justify-between">
-          {isLLessonAvaliable ? (
-            <span
-              className={classNames(
-                'text-sm font-medium flex items-center gap-2',
-                {
-                  'text-blue-500': !isActiveLesson,
-                  'text-white': isActiveLesson,
-                }
-              )}
-            >
-              <CheckCircle size={20} />
-              Conteudo liberado
-            </span>
-          ) : (
-            <span className="text-sm text-orange-500 font-medium flex items-center gap-2">
-              <Lock size={20} />
-              Em breve
-            </span>
-          )}
-
-          <span
+          <div
             className={classNames(
-              'text-xs rounded px-2 py-[0.125rem] text-white border font-bold',
+              'flex flex-col rounded border border-gray-500 p-4 mt-2 group-hover:border-green-500',
               {
-                'border-white': isActiveLesson,
-                'border-green-300': !isActiveLesson,
+                'bg-green-500': isActiveLesson,
               }
             )}
           >
-            {type === 'live' ? 'AO VIVO' : 'AULA PRATICA'}
-          </span>
-        </header>
+            <header className="flex items-center justify-between">
+              {isLLessonAvaliable ? (
+                <span
+                  className={classNames(
+                    'text-sm font-medium flex items-center gap-2',
+                    {
+                      'text-blue-500': !isActiveLesson,
+                      'text-white': isActiveLesson,
+                    }
+                  )}
+                >
+                  <CheckCircle size={20} />
+                  Conteudo liberado
+                </span>
+              ) : (
+                <span className="text-sm text-orange-500 font-medium flex items-center gap-2">
+                  <Lock size={20} />
+                  Em breve
+                </span>
+              )}
 
-        <strong
-          className={classNames('mt-5 block', {
-            'text-white': isActiveLesson,
-            'text-gray-200': !isActiveLesson,
-          })}
-        >
-          {title}
-        </strong>
-      </div>
-    </Link>
+              <span
+                className={classNames(
+                  'text-xs rounded px-2 py-[0.125rem] text-white border font-bold',
+                  {
+                    'border-white': isActiveLesson,
+                    'border-green-300': !isActiveLesson,
+                  }
+                )}
+              >
+                {type === 'live' ? 'AO VIVO' : 'AULA PRATICA'}
+              </span>
+            </header>
+
+            <strong
+              className={classNames('mt-5 block', {
+                'text-white': isActiveLesson,
+                'text-gray-200': !isActiveLesson,
+              })}
+            >
+              {title}
+            </strong>
+          </div>
+        </Link>
+      ) : (
+        <Link to={`#`} className="flex flex-col group">
+          <span className="text-gray-300">{availableDateFormated}</span>
+
+          <div
+            className={classNames(
+              'flex flex-col rounded border border-gray-500 p-4 mt-2 group-hover:border-green-500',
+              {
+                'bg-green-500': isActiveLesson,
+              }
+            )}
+          >
+            <header className="flex items-center justify-between">
+              {isLLessonAvaliable ? (
+                <span
+                  className={classNames(
+                    'text-sm font-medium flex items-center gap-2',
+                    {
+                      'text-blue-500': !isActiveLesson,
+                      'text-white': isActiveLesson,
+                    }
+                  )}
+                >
+                  <CheckCircle size={20} />
+                  Conteudo liberado
+                </span>
+              ) : (
+                <span className="text-sm text-orange-500 font-medium flex items-center gap-2">
+                  <Lock size={20} />
+                  Em breve
+                </span>
+              )}
+
+              <span
+                className={classNames(
+                  'text-xs rounded px-2 py-[0.125rem] text-white border font-bold',
+                  {
+                    'border-white': isActiveLesson,
+                    'border-green-300': !isActiveLesson,
+                  }
+                )}
+              >
+                {type === 'live' ? 'AO VIVO' : 'AULA PRATICA'}
+              </span>
+            </header>
+
+            <strong
+              className={classNames('mt-5 block', {
+                'text-white': isActiveLesson,
+                'text-gray-200': !isActiveLesson,
+              })}
+            >
+              {title}
+            </strong>
+          </div>
+        </Link>
+      )}
+    </>
   );
 }
