@@ -84,12 +84,12 @@ export function Lessons({ title, slug, availebleAt, type }: LessonsProps) {
           </div>
         </Link>
       ) : (
-        <Link to={`#`} className="flex flex-col group">
+        <Link to={`#`} className="flex flex-col">
           <span className="text-gray-300">{availableDateFormated}</span>
 
           <div
             className={classNames(
-              'flex flex-col rounded border border-gray-500 p-4 mt-2 group-hover:border-green-500',
+              'flex flex-col rounded border border-gray-500 p-4 mt-2',
               {
                 'bg-green-500': isActiveLesson,
               }
