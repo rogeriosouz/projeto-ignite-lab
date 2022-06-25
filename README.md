@@ -8,7 +8,7 @@
 
 
 Project in the air (vercel)
-<p>https://projeto-ignite-lab-blush.vercel.app/event/lesson/abertura-do-evento-ignite-lab</p>
+<p>https://https://projeto-ignite-lab-blush.vercel.app</p>
 
 <h2>technologies:</h2>
 <p>react ts (vite)</p>
