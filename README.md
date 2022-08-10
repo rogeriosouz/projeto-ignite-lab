@@ -1,25 +1,31 @@
-<h1>projeto-ignite-lab</h1>
-
-![pag-principal](https://user-images.githubusercontent.com/76504596/175749245-e19dc488-1f0a-491f-befe-53f528781629.png)
-<p>----------------------------------</p>
-
-![project-ignite-lab-pag-login](https://user-images.githubusercontent.com/76504596/175749260-024fe43e-6c2e-41e1-b663-91e38ede9aa1.png)
+<h1 align="center">PROJECT-IGNITE-LAB</h1>
 
 
+<p align="center" >
+  <img width="900" height="450" src="https://user-images.githubusercontent.com/76504596/175749245-e19dc488-1f0a-491f-befe-53f528781629.png">
 
-Project in the air (vercel)
-<p>https://projeto-ignite-lab-blush.vercel.app</p>
+</p>
 
-<h2>technologies:</h2>
-<p>react ts (vite)</p>
-<p>tailwindcss (css)</p>
-<p>graphql (api)</p>
+<h2></h2>
+<p align="center">
+  <img width="900" height="450" src="https://user-images.githubusercontent.com/76504596/183809091-653d93a6-eac8-4f6e-b0bd-39a01d7f76ab.png">
+</p>
 
 
 
+**ON Project in the air:**
+```bash
+  . https://projeto-ignite-lab-blush.vercel.app
+```
 
-<h2>Clone Project</h2>
+**🛠️ BUILT WITH**
+```bash
+   .  React ts (vite)
+   .  Graphql (api)
+   .  CSS - tailwindcss
+```
 
+<h2 align="center">CLONE PROJECT</h2>
 
 ```bash
   # Clone the repository
