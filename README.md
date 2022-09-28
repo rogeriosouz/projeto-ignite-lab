@@ -13,8 +13,8 @@
 
 <div align="center">
   <p>
-    <img width="250" height="450" src="https://user-images.githubusercontent.com/76504596/192709168-9a100953-83e9-4ceb-aca5-e7534d92ff93.png"> 
-    <img width="250" height="450" src="https://user-images.githubusercontent.com/76504596/192709247-3863efb8-9e37-468b-9af8-56616c6db296.png">
+    <img width="240" height="450" src="https://user-images.githubusercontent.com/76504596/192709168-9a100953-83e9-4ceb-aca5-e7534d92ff93.png"> 
+    <img width="240" height="450" src="https://user-images.githubusercontent.com/76504596/192709247-3863efb8-9e37-468b-9af8-56616c6db296.png">
   </p>
 </div>
 
