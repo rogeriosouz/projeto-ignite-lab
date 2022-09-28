@@ -3,13 +3,21 @@
 
 <p align="center" >
   <img width="900" height="450" src="https://user-images.githubusercontent.com/76504596/175749245-e19dc488-1f0a-491f-befe-53f528781629.png">
-
 </p>
 
-<h2></h2>
-<p align="center">
-  <img width="900" height="450" src="https://user-images.githubusercontent.com/76504596/183809091-653d93a6-eac8-4f6e-b0bd-39a01d7f76ab.png">
-</p>
+
+<h2 align="center">
+  MOBILE
+</h2>
+
+
+<div align="center">
+  <p>
+    <img width="250" height="450" src="https://user-images.githubusercontent.com/76504596/192709168-9a100953-83e9-4ceb-aca5-e7534d92ff93.png"> 
+    <img width="250" height="450" src="https://user-images.githubusercontent.com/76504596/192709247-3863efb8-9e37-468b-9af8-56616c6db296.png">
+  </p>
+</div>
+
 
 
 
