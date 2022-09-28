@@ -1,12 +1,26 @@
+import classNames from 'classnames';
 import { useGetLessonsQuery } from '../graphql/generated';
 import { Lessons } from './Lessons';
 
-export function SideBar() {
+type SideBarProps = {
+  isActiveMobile?: boolean;
+};
+
+export function SideBar({ isActiveMobile }: SideBarProps) {
   const { data } = useGetLessonsQuery();
 
   return (
-    <aside className="w-[348px] bg-gray-700 p-6 border-l border-gray-600">
-      <span className="font-bold text-2xl pb-6 mb-6 border-b border-gray-500 block">
+    <aside
+      className={classNames(
+        'w-[348px] h-[600px]  overflow-auto bg-gray-700 p-6 border-l border-gray-600',
+        {
+          'hidden lg:block': !isActiveMobile,
+          'block fixed top-[56px] left-0 z-10 h-screen w-screen':
+            isActiveMobile,
+        }
+      )}
+    >
+      <span className="lg:text-left text-center font-bold text-2xl pb-6 mb-6 border-b border-gray-500 block">
         Cronograma de aulas
       </span>
 
